@@ -9,6 +9,9 @@
         <li class="nav-item">
           <%=link_to "Home",root_path, class: "nav-link active"%>
         </li>
+        <li class="nav-item">
+          <%=link_to "Tweets","/tweets", class: "nav-link active"%>
+        </li>
         <% if user_signed_in? %>
         <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
         <% end %>
